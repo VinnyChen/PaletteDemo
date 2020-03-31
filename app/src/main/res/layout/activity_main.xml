@@ -8,41 +8,33 @@
   >
 
   <ImageView
-    android:id="@+id/bg_image"
-    android:layout_width="150dp"
+    android:id="@+id/bg_home"
+    android:layout_width="0dp"
     android:layout_height="150dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_edu_home_bg"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
     />
 
-  <ImageView
-    android:id="@+id/bg_home"
+  <com.stx.xhb.xbanner.XBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner"
     android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:src="@drawable/ic_edu_home_bg"
-    android:scaleType="fitXY"
+    android:layout_height="120dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="20dp"
+    app:AutoPlayTime="3000"
+    app:isShowIndicatorOnlyOne="true"
+    app:isShowNumberIndicator="true"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="parent"
+    app:pageChangeDuration="800"
+    app:pointsPosition="RIGHT"
+    app:tipTextSize="12sp"
+    />
 
-  <com.stx.xhb.xbanner.XBanner
-      xmlns:app="http://schemas.android.com/apk/res-auto"
-      android:id="@+id/banner"
-      android:layout_width="0dp"
-      android:layout_height="120dp"
-      app:AutoPlayTime="3000"
-      app:pointsContainerBackground="#44aaaaaa"
-      app:pointsPosition="RIGHT"
-      app:tipTextSize="12sp"
-      app:isShowNumberIndicator="true"
-      app:isShowIndicatorOnlyOne="true"
-      app:pageChangeDuration="800"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      android:layout_marginStart="20dp"
-      android:layout_marginEnd="20dp"
-      android:layout_marginTop="50dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
